@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Заголовок </title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+   <!-- uikit -->
+    <link rel="stylesheet" href="css/uikit.almost-flat.css" media="all">
+
+    <!-- flag icons -->
+    <link rel="stylesheet" href="css/flags.css" media="all">
+
+    <!-- style switcher -->
+    <link rel="stylesheet" href="css/style_switcher.css" media="all">
+    
+    <!-- altair admin -->
+    <link rel="stylesheet" href="css/main.css" media="all">
+
+    <!-- themes -->
+    <link rel="stylesheet" href="css/themes_combined.css" media="all">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <header>
+     <div class="top_line">
+       <ul class="list-inline">
+        <!--  <li><a href="gifts&cupons.html">Give 10$ , Get 10$  <i class="fa fa-heart"></i></a></li>
+         <li><a href="#" onclick="HelpOpenFn();">Help  <i class="fa fa-question-circle"></i></a></li> -->
+         <li><a href="#" onclick="NotifOpenFn();">Notification <i class="fa fa-bell" aria-hidden="true"></i><span class="number_notif">22</span></a></li>
+         <li><a href="#" onclick="openuser();">CEO RavenX  <i class="fa fa-cog" aria-hidden="true"></i></a></li>
+       </ul>
+     </div>
+     <div class="bottom_line"></div>
+    </header>
+ 
+
+
+   <aside>
+      <div class="container-fluid">
+        <h1>Raven <span>X</span></h1>
+     <!--    <h6><a href="settings/dashboard.html">Dashboard</a></h6> -->
+        <ul>
+          <li><a href="#" >Dashboard</a> <!-- <div class="calcCar"><span id = "calcCarspan">2</span></div> --> </li>
+          <li><a href="#" >Help Desk</a></li>
+          <li><a href="appointments.html">Clients</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+          <li><a href="recommendedservices.html">Recommended Services</a><!-- <div class="calcRecomendedServises"><span id = "calcRecomendedServisesSpan"></span></div> --></li>
+          <li ><a href="advice.html" class="active">Invoice</a></li>
+          <li><a href="mymechanics.html">Reports</a></li>
+          <li><a href="gifts&cupons.html">Raiting staffs</a></li>
+          <li><a href="gifts&cupons.html">My  mechanics</a></li>
+          <li><a href="gifts&cupons.html">My managers</a></li>
+          <li><hr></li>
+        
+        </ul>
+      </div>
+    </aside>
+ 
+
+  <div id="page_content" >
+        <div id="page_content_inner" style="margin-left: 13%;">
+
+            <div class="uk-width-medium-8-10 uk-container-center reset-print">
+                <div class="uk-grid uk-grid-collapse" data-uk-grid-margin="">
+                    <div class="uk-width-large-7-10 uk-row-first" style="max-width: 720px;">
+                        <div class="md-card md-card-single main-print" id="invoice" style="opacity: 1; transform: scale(1);">
+                            <div id="invoice_preview">
+        <div class="md-card-toolbar">
+            <div class="md-card-toolbar-actions hidden-print">
+               <!--  <i class="md-icon material-icons fa fa-print" id="invoice_print"></i> -->
+                <i class="fa fa-print" aria-hidden="true"></i>
+                <div class="md-card-dropdown" data-uk-dropdown="{pos:'bottom-right'}" aria-haspopup="true" aria-expanded="false">
+                    <i class="md-icon material-icons"></i>
+
+                    <div class="uk-dropdown uk-dropdown-small uk-dropdown-bottom" aria-hidden="true" tabindex="" style="min-width: 160px; top: 32px; left: -128px;">
+                        <ul class="uk-nav">
+                            <li><a href="#">Archive</a></li>
+                            <li><a href="#" class="uk-text-danger">Remove</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="md-card-toolbar-heading-text large" id="invoice_name">
+                Invoice 93/2015
+            </h3>
+        </div>
+        <div class="md-card-content invoice_content print_bg" style="height: 670px;">
+            <div class="uk-margin-medium-bottom">
+                <span class="uk-text-muted uk-text-small uk-text-italic">Date:</span> 04.10.2017
+                <br>
+                <span class="uk-text-muted uk-text-small uk-text-italic">Due Date:</span> <span>18.10.2017</span>
+            </div>
+            <div class="uk-grid" data-uk-grid-margin="">
+                <div class="uk-width-small-3-5 uk-row-first">
+                    <div class="uk-margin-bottom">
+                        <span class="uk-text-muted uk-text-small uk-text-italic">From:</span>
+                        <address>
+                            <p><strong>Bailey-Lynch</strong></p>
+                            <p>2808 Robson St</p>
+                            <p>Vancouver, BC V6B 3K9</p>
+                        </address>
+                    </div>
+                    <div class="uk-margin-medium-bottom">
+                        <span class="uk-text-muted uk-text-small uk-text-italic">To:</span>
+                        <address>
+                            <p><strong>Price Ltd</strong></p>
+                            <p>2894 Bond Street</p>
+                            <p>Providence, RI 02908</p>
+                        </address>
+                    </div>
+                </div>
+                <div class="uk-width-small-2-5">
+                    <span class="uk-text-muted uk-text-small uk-text-italic">Total:</span>
+                    <p class="heading_b uk-text-success">$3,751.50</p>
+                    <p class="uk-text-small uk-text-muted uk-margin-top-remove">Incl. VAT -
+                        $862.85</p>
+                </div>
+            </div>
+            <div class="uk-grid uk-margin-large-bottom">
+                <div class="uk-width-1-1">
+                    <table class="uk-table">
+                        <thead>
+                            <tr class="uk-text-upper">
+                                <th>Description</th>
+                                <th>Rate</th>
+                                <th class="uk-text-center">Hours</th>
+                                <th class="uk-text-center">Vat</th>
+                                <th class="uk-text-center">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="uk-table-middle">
+                                <td>
+                                    <span class="uk-text-large">Website design &amp; development</span><br>
+                                    <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                </td>
+                                <td>
+                                    $25.00
+                                </td>
+                                <td class="uk-text-center">
+                                    32
+                                </td>
+                                <td class="uk-text-center">
+                                    23%
+                                </td>
+                                <td class="uk-text-center">
+                                    $984.00
+                                </td>
+                            </tr>
+                        <tr class="uk-table-middle">
+                                <td>
+                                    <span class="uk-text-large">Search engine optimization</span><br>
+                                    <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis cupiditate delectus deserunt.</span>
+                                </td>
+                                <td>
+                                    $50.00
+                                </td>
+                                <td class="uk-text-center">
+                                    20
+                                </td>
+                                <td class="uk-text-center">
+                                    23%
+                                </td>
+                                <td class="uk-text-center">
+                                    $1,230.00
+                                </td>
+                            </tr>
+                        <tr class="uk-table-middle">
+                                <td>
+                                    <span class="uk-text-large">Consulting service</span><br>
+                                    <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet, consectetur.</span>
+                                </td>
+                                <td>
+                                    $100.00
+                                </td>
+                                <td class="uk-text-center">
+                                    12.5
+                                </td>
+                                <td class="uk-text-center">
+                                    23%
+                                </td>
+                                <td class="uk-text-center">
+                                    $1,537.50
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <span class="uk-text-muted uk-text-small uk-text-italic">Payment to:</span>
+                    <p class="uk-margin-top-remove">
+                        BANK XYZ<br>IBAN 123 123 123 123
+                    </p>
+                    <p class="uk-text-small">Please pay within 14 days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+                            <div id="invoice_form"></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-large-3-10 hidden-print uk-visible-large">
+                        <div class="md-list-outside-wrapper" ><div class="scroll-wrapper scrollbar-inner" style="position: relative;"><div class="scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 670px; margin-top: 35px;">
+                            <ul class="md-list md-list-outside invoices_list" id="invoices_list">
+    
+                                <li class="heading_list">August 2017</li>
+
+        
+                                <li class="md-list-item-active">
+                                    <a href="#" class="md-list-content" data-invoice-id="2">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 8/2015 <span class="uk-text-small uk-text-muted">(18 Aug)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Raynor, Walter and Effertz</span>
+                                    </a>
+                                </li>
+
+        
+                                <li class="">
+                                    <a href="#" class="md-list-content" data-invoice-id="3">
+                                        <span class="uk-badge uk-badge-primary">Header/Footer</span>
+                                        <span class="md-list-heading uk-text-truncate">Invoice 147/2015 <span class="uk-text-small uk-text-muted">(17 Aug)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Borer, Zboncak and Medhurst</span>
+                                    </a>
+                                </li>
+
+        
+                                <li class="">
+                                    <a href="#" class="md-list-content" data-invoice-id="4">
+                                        <span class="uk-badge uk-badge-danger">Overdue</span>
+                                        <span class="md-list-heading uk-text-truncate">Invoice 162/2015 <span class="uk-text-small uk-text-muted">(16 Aug)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Quigley, Spencer and Gutkowski</span>
+                                    </a>
+                                </li>
+
+        
+                                <li class="">
+                                    <a href="#" class="md-list-content" data-invoice-id="5">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 181/2015 <span class="uk-text-small uk-text-muted">(15 Aug)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Brakus-Wisoky</span>
+                                    </a>
+                                </li>
+
+        
+                                <li class="">
+                                    <a href="#" class="md-list-content" data-invoice-id="6">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 17/2015 <span class="uk-text-small uk-text-muted">(14 Aug)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Kuvalis-O'Conner</span>
+                                    </a>
+                                </li>
+
+        
+                                <li class="">
+                                    <a href="#" class="md-list-content" data-invoice-id="7">
+                                        <span class="uk-badge uk-badge-primary">Header/Footer</span>
+                                        <span class="md-list-heading uk-text-truncate">Invoice 98/2015 <span class="uk-text-small uk-text-muted">(13 Aug)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Jacobson-Boehm</span>
+                                    </a>
+                                </li>
+
+        
+                                <li class="heading_list">Oldest</li>
+    
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="9">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 133/2015 <span class="uk-text-small uk-text-muted">(22 Apr)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Kirlin, Wolff and Walker</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="10">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 148/2015 <span class="uk-text-small uk-text-muted">(26 Mar)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Schmidt and Sons</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="11">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 156/2015 <span class="uk-text-small uk-text-muted">(21 Jun)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Ritchie, Howe and Stark</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="12">
+                                        <span class="uk-badge uk-badge-danger">Overdue</span>
+                                        <span class="md-list-heading uk-text-truncate">Invoice 191/2015 <span class="uk-text-small uk-text-muted">(12 Jun)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Senger, Gutkowski and Kuvalis</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="13">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 200/2015 <span class="uk-text-small uk-text-muted">(16 Jul)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Bailey-Wiza</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="14">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 69/2015 <span class="uk-text-small uk-text-muted">(28 Apr)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Bartell Ltd</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="15">
+                                        <span class="uk-badge uk-badge-danger">Overdue</span>
+                                        <span class="md-list-heading uk-text-truncate">Invoice 92/2015 <span class="uk-text-small uk-text-muted">(17 Jun)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Deckow-Ziemann</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="16">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 100/2015 <span class="uk-text-small uk-text-muted">(16 Jun)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Toy and Sons</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="17">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 80/2015 <span class="uk-text-small uk-text-muted">(22 Jun)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Hessel-Feil</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="18">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 177/2015 <span class="uk-text-small uk-text-muted">(7 Jul)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Lynch Ltd</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="19">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 155/2015 <span class="uk-text-small uk-text-muted">(15 Jun)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Braun-Schowalter</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="20">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 114/2015 <span class="uk-text-small uk-text-muted">(20 Jun)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Mueller Ltd</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="21">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 96/2015 <span class="uk-text-small uk-text-muted">(18 Apr)</span></span>
+                                        <span class="uk-text-small uk-text-muted">VonRueden, Heathcote and Deckow</span>
+                                    </a>
+                                </li>
+
+        
+                                <li>
+                                    <a href="#" class="md-list-content" data-invoice-id="22">
+                                        <span class="md-list-heading uk-text-truncate">Invoice 137/2015 <span class="uk-text-small uk-text-muted">(6 May)</span></span>
+                                        <span class="uk-text-small uk-text-muted">Douglas Group</span>
+                                    </a>
+                                </li>
+
+                    </ul>
+                        </div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 89px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<div class="md-fab-wrapper">
+        <a class="md-fab md-fab-accent md-fab-wave-light" href="#" id="invoice_add">
+            <i class="material-icons">&#xE145;</i>
+          <!--   <span class="material-icons">+</span> -->
+        </a>
+    </div>
+
+
+ <script id="invoice_template" type="text/x-handlebars-template">
+        <div class="md-card-toolbar{{#if invoice.header}} hidden-print{{/if}}">
+            <div class="md-card-toolbar-actions hidden-print">
+                <i class="md-icon material-icons" id="invoice_print">&#xE8ad;</i>
+                <div class="md-card-dropdown" data-uk-dropdown="{pos:'bottom-right'}">
+                    <i class="md-icon material-icons">&#xE5D4;</i>
+                    <div class="uk-dropdown uk-dropdown-small">
+                        <ul class="uk-nav">
+                            <li><a href="#">Archive</a></li>
+                            <li><a href="#" class="uk-text-danger">Remove</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="md-card-toolbar-heading-text large" id="invoice_name">
+                Invoice {{invoice.invoice_number}}
+            </h3>
+        </div>
+        <div class="md-card-content invoice_content print_bg{{#if invoice.footer}} invoice_footer_active{{/if}}">
+            {{#if invoice.header}}
+                <div class="invoice_header md-bg-blue-grey-500">
+                    <img src="assets/img/logo_light.png" alt="" height="30" width="140"/>
+                    <img class="uk-float-right" src="assets/img/others/html5-css-javascript-logos.png" alt="" height="80" width="205"/>
+                </div>
+            {{/if}}
+            <div class="uk-margin-medium-bottom">
+                {{#if invoice.header}}
+                <h3 class="heading_a uk-margin-bottom"> Invoice {{invoice.invoice_number}} </h3>
+                {{/if}}
+                <span class="uk-text-muted uk-text-small uk-text-italic">Date:</span> {{invoice.invoice_date}}
+                <br/>
+                <span class="uk-text-muted uk-text-small uk-text-italic">Due Date:</span> <span {{#if invoice.overdue}} class="uk-text-danger uk-text-bold"{{/if}}>{{invoice.invoice_due_date}}</span>
+            </div>
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-small-3-5">
+                    <div class="uk-margin-bottom">
+                        <span class="uk-text-muted uk-text-small uk-text-italic">From:</span>
+                        <address>
+                            <p><strong>{{invoice.invoice_from_company}}</strong></p>
+                            <p>{{invoice.invoice_from_address_1}}</p>
+                            <p>{{invoice.invoice_from_address_2}}</p>
+                        </address>
+                    </div>
+                    <div class="uk-margin-medium-bottom">
+                        <span class="uk-text-muted uk-text-small uk-text-italic">To:</span>
+                        <address>
+                            <p><strong>{{invoice.invoice_to_company}}</strong></p>
+                            <p>{{invoice.invoice_to_address_1}}</p>
+                            <p>{{invoice.invoice_to_address_2}}</p>
+                        </address>
+                    </div>
+                </div>
+                <div class="uk-width-small-2-5">
+                    <span class="uk-text-muted uk-text-small uk-text-italic">Total:</span>
+                    <p class="heading_b {{#if invoice.overdue}}uk-text-danger{{else}}uk-text-success{{/if}}">{{invoice.invoice_total_value}}</p>
+                    <p class="uk-text-small uk-text-muted uk-margin-top-remove">Incl. VAT -
+                        {{invoice.invoice_vat_value}}</p>
+                </div>
+            </div>
+            <div class="uk-grid uk-margin-large-bottom">
+                <div class="uk-width-1-1">
+                    <table class="uk-table">
+                        <thead>
+                            <tr class="uk-text-upper">
+                                <th>Description</th>
+                                <th>Rate</th>
+                                <th class="uk-text-center">Hours</th>
+                                <th class="uk-text-center">Vat</th>
+                                <th class="uk-text-center">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {{#each invoice.invoice_services}}
+                        <tr class="uk-table-middle">
+                                <td>
+                                    <span class="uk-text-large">{{ service_name }}</span><br/>
+                                    <span class="uk-text-muted uk-text-small">{{ service_description }}</span>
+                                </td>
+                                <td>
+                                    {{ service_rate }}
+                                </td>
+                                <td class="uk-text-center">
+                                    {{ service_hours }}
+                                </td>
+                                <td class="uk-text-center">
+                                    {{ service_vat }}
+                                </td>
+                                <td class="uk-text-center">
+                                    {{ service_total }}
+                                </td>
+                            </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <span class="uk-text-muted uk-text-small uk-text-italic">Payment to:</span>
+                    <p class="uk-margin-top-remove">
+                        {{{ invoice.invoice_payment_info }}}
+                    </p>
+                    <p class="uk-text-small">Please pay within {{ invoice.invoice_payment_due }} days</p>
+                </div>
+            </div>
+            {{#if invoice.footer}}
+            <div class="invoice_footer">
+                Collier, Hills and Greenholt<span>&middot;</span>647 Deon Forges Apt. 937
+Kuhnberg, AL 50108<br>
+                </span>1-930-416-2724<span>&middot;</span>loy77@conroy.info            </div>
+            {{/if}}
+        </div>
+    </script>
+
+    <script id="invoice_form_template" type="text/x-handlebars-template">
+        <form action="" class="uk-form-stacked">
+            <div class="md-card-toolbar">
+                <div class="md-card-toolbar-actions">
+                    <i class="md-icon material-icons">&#xE161;</i>
+                </div>
+                <input name="invoice_number" id="invoice_number" class="md-card-toolbar-input" type="text" value="" placeholder="Invoice number" />
+            </div>
+            <div class="md-card-content large-padding">
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-2">
+                        <label class="uk-form-label" for="hobbies">Issue date:</label>
+                        <div class="uk-input-group">
+                            <span class="uk-input-group-addon"><i class="uk-input-group-icon uk-icon-calendar"></i></span>
+                            <label for="invoice_dp">Select date</label>
+                            <input class="md-input" type="text" id="invoice_dp" value="" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-2">
+                        <label class="uk-form-label uk-margin-bottom" for="hobbies">Due date (days):</label>
+                        <span class="icheck-inline">
+                            <input type="radio" name="invoice_due_date" id="invoice_due_date_7" data-md-icheck />
+                            <label for="invoice_due_date_7" class="inline-label">7</label>
+                        </span>
+                        <span class="icheck-inline">
+                            <input type="radio" name="invoice_due_date" id="invoice_due_date_14" data-md-icheck />
+                            <label for="invoice_due_date_14" class="inline-label">14</label>
+                        </span>
+                        <span class="icheck-inline">
+                            <input type="radio" name="invoice_due_date" id="invoice_due_date_21" data-md-icheck />
+                            <label for="invoice_due_date_21" class="inline-label">21</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="uk-grid uk-grid-divider grid-block" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-2">
+                        <label class="uk-form-label uk-margin-bottom" for="hobbies">From:</label>
+                        <div class="uk-form-row">
+                            <label for="invoice_from_company">Company Name</label>
+                            <input type="text" class="md-input" id="invoice_from_company" name="invoice_from_company"/>
+                        </div>
+                        <div class="uk-form-row">
+                            <label for="invoice_from_address_1">Address 1</label>
+                            <input type="text" class="md-input" id="invoice_from_address_1" name="invoice_from_address_1" />
+                        </div>
+                        <div class="uk-form-row">
+                            <label for="invoice_from_address_2">Address 2</label>
+                            <input type="text" class="md-input" id="invoice_from_address_2" name="invoice_from_address_2" />
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-2">
+                        <label class="uk-form-label uk-margin-bottom" for="hobbies">To:</label>
+                        <div class="uk-form-row">
+                            <label for="invoice_to_company">Company Name</label>
+                            <input type="text" class="md-input" id="invoice_to_company" name="invoice_to_company"/>
+                        </div>
+                        <div class="uk-form-row">
+                            <label for="invoice_to_address_1">Address 1</label>
+                            <input type="text" class="md-input" id="invoice_to_address_1" name="invoice_to_address_1" />
+                        </div>
+                        <div class="uk-form-row">
+                            <label for="invoice_to_address_2">Address 2</label>
+                            <input type="text" class="md-input" id="invoice_to_address_2" name="invoice_to_address_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-1-1">
+                        <div id="form_invoice_services"></div>
+                        <div class="uk-text-center uk-margin-medium-top uk-margin-bottom">
+                            <a href="#" class="md-btn md-btn-flat md-btn-flat-primary" id="invoice_form_append_service_btn">Add new</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </script>
+    <script id="invoice_form_template_services" type="text/x-handlebars-template">
+        {{#ifCond invoice_service_id '!==' 1}}
+        <hr class="md-hr"/>
+        {{/ifCond}}
+        <div class="uk-grid" data-uk-grid-margin data-service-number="{{invoice_service_id}}">
+            <div class="uk-width-medium-1-10 uk-text-center">
+                <p class="uk-text-large">{{invoice_service_id}}.</p>
+            </div>
+            <div class="uk-width-medium-9-10">
+                <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                    <div class="uk-width-medium-5-10">
+                        <label for="inv_service_{{invoice_service_id}}">Service Name</label>
+                        <input type="text" class="md-input" id="inv_service_{{invoice_service_id}}" name="inv_service_id_{{invoice_service_id}}" />
+                    </div>
+                    <div class="uk-width-medium-1-10">
+                        <label for="inv_service_{{invoice_service_id}}_rate">Rate</label>
+                        <input type="text" class="md-input" id="inv_service_{{invoice_service_id}}_rate" name="inv_service_{{invoice_service_id}}_rate" />
+                    </div>
+                    <div class="uk-width-medium-1-10">
+                        <label for="inv_service_{{invoice_service_id}}_hours">Hours</label>
+                        <input type="text" class="md-input" id="inv_service_{{invoice_service_id}}_hours" name="inv_service_{{invoice_service_id}}_hours" />
+                    </div>
+                    <div class="uk-width-medium-1-10">
+                        <label for="inv_service_{{invoice_service_id}}_vat">VAT</label>
+                        <input type="text" class="md-input" id="inv_service_{{invoice_service_id}}_vat" name="inv_service_{{invoice_service_id}}_vat" />
+                    </div>
+                    <div class="uk-width-medium-2-10">
+                        <label for="inv_service_{{invoice_service_id}}_vat">Total</label>
+                        <input type="text" class="md-input" id="inv_service_{{invoice_service_id}}_vat" name="inv_service_{{invoice_service_id}}_vat" readonly/>
+                    </div>
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-1">
+                        <label for="inv_service_{{invoice_service_id}}_desc">Description</label>
+                        <textarea class="md-input" id="inv_service_{{invoice_service_id}}_desc" name="invoice_service_id_{{invoice_service_id}}_desc" cols="30" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!-- google web fonts -->
+    <script>
+        WebFontConfig = {
+            google: {
+                families: [
+                    'Source+Code+Pro:400,700:latin',
+                    'Roboto:400,300,500,700,400italic:latin'
+                ]
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+
+    <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+
+
+      <script src="js/common.min.js"></script>
+    <!-- uikit functions -->
+    <script src="js/uikit_custom.min.js"></script>
+    <!-- altair common functions/helpers -->
+    <script src="js/altair_admin_common.min.js"></script>
+
+    <!-- page specific plugins -->
+    <!-- handlebars.js -->
+    <script src="js/handlebars.min.js"></script>
+    <script src="js/handlebars_helpers.min.js"></script>
+
+    <!--  invoices functions -->
+
+
+
+    <script src= "js/page_invoices.js"></script>
+  </body>
+</html>

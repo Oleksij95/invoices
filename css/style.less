@@ -1,0 +1,2481 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face{
+	font-family: "KickHornet";
+	src:url("../fonts/KickHornet.eot");
+	src:url("../fonts/KickHornet.eot&#iefix") format("embedded-opentype"),
+		url("../fonts/KickHornet.woff") format("woff"),
+		url("../fonts/KickHornet.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Bold";
+	src:url("..//fonts/Roboto-Bold.eot");
+	src:url("..//fonts/Roboto-Bold.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Bold.woff") format("woff"),
+		url("..//fonts/Roboto-Bold.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Medium";
+	src:url("..//fonts/Roboto-Medium.eot");
+	src:url("..//fonts/Roboto-Medium.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Medium.woff") format("woff"),
+		url("..//fonts/Roboto-Medium.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Regular";
+	src:url("..//fonts/Roboto-Regular.eot");
+	src:url("..//fonts/Roboto-Regular.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Regular.woff") format("woff"),
+		url("..//fonts/Roboto-Regular.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Light";
+	src:url("..//fonts/Roboto-Light.eot");
+	src:url("..//fonts/Roboto-Light.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Light.woff") format("woff"),
+		url("..//fonts/Roboto-Light.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto-Condensed";
+	src:url("..//fonts/Roboto-Condensed.eot");
+	src:url("..//fonts/Roboto-Condensed.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/Roboto-Condensed.woff") format("woff"),
+		url("..//fonts/Roboto-Condensed.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+body{
+	background-color: #f1f5f8;
+}
+
+
+
+.IScopy, .ISADD{
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	background-color: #0d82d5;
+	z-index: 9999;
+	top: -200px;
+	transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+	p{
+		color: #fff;
+		text-align: center;
+		line-height: 70px;
+	}
+}
+
+h1#carH1{
+	display: block;
+ 	width: 100%;
+ 	background-color: #f1f5f8;
+    z-index: 9999;
+    font-size: 18px;
+    margin: 0px;
+   
+}
+h1#ServicesH1{
+	font-size: 18px;
+	display: block;
+	background-color: #f1f5f8;
+	position: absolute;
+	z-index: 9999;
+	top: -45px;
+}
+
+aside{
+	height: 100vh;
+	width: 20%;
+	/*max-width: 320px;*/
+	position: fixed;
+	background-color: #0185b5;
+	float: left;
+	box-shadow: 1px 1px 3px #1668b9;
+	h1{
+		font-family: KickHornet;
+		color: #57bcfc;
+		text-align: center;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		span{
+			color: red;
+		}
+	}
+	h6{
+		color: #ffffff;
+		font-size: 14px;
+		margin-left: 30px;
+		margin-bottom:20px;
+		a{
+			text-decoration: none;
+			color: #ffffff;
+			&:hover{
+				text-decoration: none;
+				color: #fff;
+			};
+		}
+	}
+	ul{
+		list-style: none;
+		li{
+			margin-top: 10px;
+			a{
+				color: #ffffff;
+				font-size: 14px;
+				text-decoration:none;
+				margin: 0;
+				font-family: Roboto-Light;
+				&:hover{
+					text-decoration: none;
+					color: #fff;
+				};
+			}
+			a.active{
+				color: #fff;
+				font-family: Roboto-Medium;
+				&:hover{
+					text-decoration: none;
+				};
+			}
+			hr{
+				border-top: 1px solid #0f77a7;
+				color: #1a365a;
+			}
+			.calcCar, .calcRecomendedServises{
+				float: right;
+				width: 15px;
+				height: 15px;
+				margin-right: 10px;
+				background-color: #1c7ad5;
+				span{
+					display: block;
+					font-size: 10px;
+					text-align: center;
+					color: #fff;
+					padding-top: 1.9px;
+				}
+			}
+		}
+	}
+	a.btn{
+		margin-left: 40px;
+		padding: 0;
+		text-align: center;
+		padding: 10px 40px;
+		border: 1px solid #517196;
+		color: #fff;
+		text-align: center;
+		margin-top: 40px;
+		&:hover{
+			color: #fff;
+			border: 1.3px solid #fff;
+			text-decoration: none;
+		};
+
+	}
+}
+
+
+
+.openUser, .openHelp, .openNotific{
+	display: none;
+	width: 210px;
+	height: 150px;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	box-shadow: 0px 0px 15px #909497;
+	z-index: 9999;
+	background-color: #fff;
+	padding-left: 10px;
+	padding-top: 20px;
+	&:after {
+	    content: ''; 
+	    position: absolute; /* Абсолютное позиционирование */
+	    right: 24px; top: -20px; /* Положение треугольника */
+	    border: 10px solid transparent; /* Прозрачные границы */
+	    border-bottom: 10px solid #fff; /* Добавляем треугольник */
+
+   }
+	ul{
+		list-style: none;
+		margin-top: 10px;
+		li{
+			margin-top: 0px;
+			&:last-child{
+				margin-bottom: 10px;
+			};
+			a{
+				font-size: 13px;
+				text-decoration: none;
+				color: #313132;
+				font-family: Roboto-Medium;
+				text-transform: uppercase;
+				&:hover{
+					color: #46484a;
+				};
+			}
+			.out{
+				&:before{
+					content:'';
+					width: 19px;
+					height: 19px;
+					background-image: url('../img/exit.png');
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 10px;
+				};
+			}
+		}
+	}
+}
+
+
+.openHelp{
+	/*display: none; */
+	/*display: block;*/
+	height: 130px;
+	padding-left: 15px;
+	right: 350px; 
+	width: 220px;
+
+	&:after {
+	    content: ''; 
+	    position: absolute; /* Абсолютное позиционирование */
+	    right: 52px; top: -20px; /* Положение треугольника */
+	    border: 10px solid transparent; /* Прозрачные границы */
+	    border-bottom: 10px solid #fff; /* Добавляем треугольник */
+
+   }
+	h3{
+		font-size: 12px;
+		font-family: Roboto-Medium;
+		color: #313132;
+		margin-top: 0;
+	}
+	p{
+		font-family: Roboto-Regular;
+		font-size: 12px;
+		color: #949595;
+	}
+	p.tel, .writ{
+		font-size: 12px;
+		font-family: Roboto-Medium;
+		color: #1d79d3;
+		padding: 0;
+		margin: 0;
+		margin-top: 2px;
+	}
+
+	p.tel{
+		&:before{
+			content:'';
+			width: 14px;
+			height: 14px;
+			background-image: url('../img/tell.png');
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: middle;
+		};
+	}
+
+	p.writ{
+		&:before{
+			content:'';
+			width: 16px;
+			height: 12px;
+			background-image: url('../img/write.png');
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: middle;
+		};
+	}
+}
+
+.openNotific{
+	width: 353px;
+	height: 275px;
+	right: 150px;
+	display: block;
+	display: none;
+	&:after {
+	    content: ''; 
+	    position: absolute; /* Абсолютное позиционирование */
+	    right: 57px; top: -20px; /* Положение треугольника */
+	    border: 10px solid transparent; /* Прозрачные границы */
+	    border-bottom: 10px solid #fff; /* Добавляем треугольник */
+
+   }
+	ul{
+		width: 325px;
+		height: 35px;
+		border-bottom: 1px solid #dad5d5;
+		li{
+			width: 160px;
+			text-align: center;
+			padding-bottom: 14px;
+
+		}
+		.active{
+			border-bottom: 2px solid #51a1ec;
+			padding-bottom: 14px;
+			margin-bottom: 0;
+		}
+	}
+	.Oll_Notif{
+		overflow: auto;
+		position: relative;
+		width: 320px;
+		height: 180px;
+		display: none;
+		.notif{
+			margin-bottom: 10px;
+			margin-top: 10px;
+			margin-left: 10px;
+			.user_img{
+				width: 40px;
+				height: 40px;
+				float: left;
+				margin-right: 15px;
+			}
+			.notif_message{
+				width: 230px;
+				display: inline-block;
+				margin-top: -20px;
+				border-bottom: 1px solid #dad5d5;
+				h3.message_title{
+					font-size: 14px;
+					font-family: Roboto-Regular;
+					color: #1976d2;
+					margin-bottom: 0;
+					margin-top: 25px;
+					padding: 0;
+				}
+				p.messge_descriptor{
+					font-size: 12px;
+					font-family: Roboto-Regular;
+					color: #7e7e7e;
+				}
+			}
+		}
+	}
+
+	
+
+
+	.Oll_message{
+		/*display: none;*/
+		overflow: auto;
+		position: relative;
+		width: 320px;
+		height: 180px;
+	
+	.message{
+		margin-bottom: 10px;
+		margin-top: 10px;
+		margin-left: 10px;
+		.user_img{
+			width: 40px;
+			height: 40px;
+			float: left;
+			margin-right: 15px;
+		}
+	}
+
+	.user_message{
+		width: 230px;
+		display: inline-block;
+		margin-top: -20px;
+		border-bottom: 1px solid #dad5d5;
+		h3.message_title{
+			font-size: 14px;
+			font-family: Roboto-Regular;
+			color: #1976d2;
+			margin-bottom: 0;
+			margin-top: 25px;
+			padding: 0;
+		}
+		p.messge_descriptor{
+			font-size: 12px;
+			font-family: Roboto-Regular;
+			color: #7e7e7e;
+		}
+	}
+}
+.SOll{
+	color: #376fb5;
+	font-family: Roboto-Medium;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+	button{
+		padding: 8px 30px;
+		background-color: #e3f0fd;
+		border: none;
+		&:hover{
+			background-color: #b0d7ff;
+		};
+	}
+
+}
+}
+
+header{
+	background-color: #1976d2;
+	width: 80%;
+	height: 50px;
+	z-index: 0;
+	float: left;
+	position: absolute;
+	left: 20%;
+	.top_line{
+		position: absolute;
+		width: 100%;
+		text-align: right;
+		margin-top: 20px;
+
+	
+		ul{
+			li{
+				border-left: 1px solid #ececec;
+				width: 170px;
+				text-align: center;
+				a{
+					font-family: Roboto-Regular;
+					font-size: 14px;
+					&:focus{
+						color: #fff;
+					};
+				}
+				&:first-child{
+					border-left: none;
+				};
+			}
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+			&:hover{
+				text-decoration: none;
+				color: #fff;
+			};
+			i{
+				margin-left: 10px;
+			}
+			.number_notif{
+				padding: 2px 5px;
+				background-color: rgba(65,85,111, .95);
+				color: #fff;
+				border-radius: 2px;
+				font-size: 8px;
+				position: absolute;
+				display: inline-block;
+				width: 20px;
+				top: -5px;
+				margin-left: -7px;
+				font-family: Roboto-Medium;
+			}
+		}
+	}
+	.bottom_line{
+		position: absolute;
+		width: 100%;
+		background-color: #1976d2;
+		height: 100px;
+		bottom: -100px;
+	}
+	
+}
+
+.bottom_line_settings{
+		position: relative;
+		/*border: 1px solid red;*/
+		padding-top: 15px;
+		padding-left: 40px;
+		left: 20%;
+		width: 80%;
+		float: left;
+		background-color: #fff;
+		h1.H1Cars{
+			margin-top: 30px;
+		}
+		h1{
+			font-family: Roboto-Bold;
+		}
+		button.H1Cars{
+			margin-top: 17px;
+			margin-right: 15px;
+		}
+		ul{
+			li{
+				a{
+					color: #525456;
+					text-decoration: none;
+					text-transform: uppercase;
+					padding: 10px 20px 20px 20px;
+					border: none;
+					border-bottom: 1px solid transparent;
+					background-color: transparent;
+					font-family: Roboto-Regular;
+					/*&:hover{
+						border-bottom: 2px solid #577cae;
+					};*/
+				}
+				a.active{
+					border-bottom: 2px solid #577cae;
+				}
+			}
+	}
+		
+}
+
+
+.bottom_line_settings{
+	height: 120px;
+	h1{
+		margin-top: 0px;
+		margin-bottom: 30px;
+		font-size: 32px;
+	}
+
+	button{
+		right: 20px;
+		top: 25px;
+		position: absolute;
+		border-radius: 30px;
+		border: 1px solid #b9baba;
+		background-color: transparent;
+		padding: 15px 25px;
+		text-transform: uppercase;
+		color: #585858;
+		&:hover{
+			border: 1px solid #576371;
+		};
+	}
+}
+
+.addCarBody{
+		position: relative;
+		padding-top: 15px;
+		padding-left: 40px;
+		left: 20%;
+		width: 80%;
+		float: left;
+		text-align: center;
+		top: 75px;
+		h1{
+			font-size: 26px;
+			font-family: Roboto-Medium;
+		}
+		p{
+			margin-top: 20px;
+			color: #88898b;
+			font-family: Roboto-Regular;
+		}
+		p.recommendedservice{
+			display: block;
+			position: absolute;
+			background-color: #e0f0fe;
+			width: 93%;
+			border: 1px solid #a0c8f3;
+			text-align: left;
+			padding: 10px 20px 10px 50px;
+			color: #2790ec;
+			top: -50px;
+		}
+		button{
+			text-transform: uppercase;
+			color: #fff;
+			background-color: #186fce;
+			padding: 15px 23px;
+			border-radius: 30px;
+			border: none;
+			margin-top: 20px;
+			font-family: Roboto-Bold;
+			&:hover{
+				background-color: #4a9df7;
+			};
+		}
+		button.CarAdvice{
+			background-color: #fff;
+			color: #68686a;
+			border: 1px solid #c1c1c1;
+			margin-left: 20px;
+			&:hover{
+				background-color: #e9e5e5;
+			};
+		}
+}
+a{
+	color: #373d51;
+	&:hover{
+		color: #373d51;
+	};
+}
+.CarIsAdd{
+	display: none;
+	background-color: #fff;
+	width: 76%;
+	max-width: 1200px;
+	height: 280px;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 22%;
+	top: 50px;
+	margin-bottom: 100px;
+	margin-right: 100%;
+	padding-top: 30px;
+	padding-right: 20px;
+	border: 1px solid #e5e8ea;
+	border-radius: 4px;
+	text-align: center;
+
+	-webkit-transition: all ease-out 0.3s;
+     -moz-transition: all ease-out 0.3s;
+     -o-transition: all ease-out 0.3s;
+     transition: all ease-out 0.3s;
+	&:hover{
+		box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+		cursor: pointer;
+	};
+	.view{
+	/*	border: 1px solid red;*/
+		width: 30%;
+		position: absolute;
+		img{
+			margin: 0;
+			padding: 0;
+			left: 0;
+			margin-left: 0px;
+			float: none;
+			margin-top: 50px; 
+			margin-bottom: 20px;
+		}
+		button.btn{
+			padding: 10px 80px;
+			border-radius: 4px;
+			border: 1px solid #e9e5e5;
+			text-transform: uppercase;
+			background-color: transparent;
+			color: #525253;
+			font-family: Roboto-Medium;
+			-webkit-transition: all ease-out 0.5s;
+		    -moz-transition: all ease-out 0.5s;
+		    -o-transition: all ease-out 0.5s;
+		    transition: all ease-out 0.5s;
+			margin-top: 20px;
+			&:hover{
+				border: 1px solid #a8a8a8;
+				color: #565656;
+				background-color: #e8e8e8; 
+			};
+		}
+	}
+
+	.infoCar{
+		border-right: 1.1px solid #c0bfbf;
+		width: 35%;
+		display: inline-block;
+		margin-left: 30px;
+		margin-top: 25px;
+		text-align: left;
+		padding-top: 0px;
+		h2.marcCar{
+			text-align: left;
+			padding: 0;
+			margin: 0;
+			margin-bottom: 50px;
+			font-family: Roboto-Bold;
+		}
+	}
+
+	
+	table{
+		td{
+			width: 280px;
+			font-size: 14px;
+			line-height: 23px;
+			font-family: Roboto-Regular;
+			color: #7e7e7e;
+		}
+		th{
+			font-family: Roboto-Medium;
+		}
+	}
+	
+
+	.BigCircle{
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		border: 15px solid rgba(0,0,0,0.1);
+		right: 120px;
+		position: absolute;
+		top: 70px;
+		text-align: center;
+		p{
+			margin: 0;
+			padding: 0;
+			margin-top: 40px;
+			font-family: Roboto-Regular;
+
+		}
+	}
+}
+
+.refer, .total_credits, .AddCard{
+	position: relative;
+	left: 22%;
+	background-color: #fff;
+	width: 50%;
+	max-width: 800px;
+
+	height: 100%;
+	top: 35px;
+	text-align: center;
+	padding: 20px;
+	padding-top: 0px;
+	border-bottom:  1px solid #d7dadd;
+	border-right:  1px solid #d7dadd;
+	border-radius: 3px;
+	/*display: inline-block;*/
+	margin-bottom: 35px;
+	float: left;
+	h5{
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		margin-left: 70px;
+		margin-bottom: 30px;
+		margin-top: 35px;
+		float: left;
+		color: #454545;
+	}
+	input{
+		display: block;
+		width: 70%;
+		height: 45px;
+		float: right;
+		margin-top:20px;
+		background-color: #fff;
+		border: 1px solid #dad7d7;
+		box-shadow: 0px 0px 3px #f0f0f0 inset;
+		padding-left: 15px;
+		padding-right: 20px;
+		border-radius: 3px;
+	}
+	button.copy{
+		background-color: transparent;
+		border: 1px solid #55acef;
+		border-radius: 3px;
+		color: #55acef;
+		padding: 5px 15px;
+		right: 25px;
+		top: 26px;
+		position: absolute;
+		&:hover{
+			border: 1px solid #388ccd;
+			color: #388ccd;
+		};
+	}
+	button.prew{
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid #595959;
+		float: right;
+		margin-top: 14px;
+		color: #595959;
+		font-family: Roboto-Regular;
+		&:hover{
+			border-bottom: 1px solid transparent;
+		};
+	}
+	button.send{
+		text-transform: uppercase;
+		background-color: transparent;
+		border: 1px solid #dad7d7;
+		border-radius: 5px;
+		padding: 7px 13px;
+		float: right;
+		margin-left: 30px;
+		margin-top: 10px;
+		color: #5e5e5e;
+		font-family: Roboto-Medium;
+		&:hover{
+			border: 1px solid #a8a7a7;
+		};
+	}
+	textarea{
+		width: 100%;
+		max-width: 100%;
+		height: 150px;
+		max-height: 550px;
+		border-radius: 5px;
+		padding-left: 15px;
+		padding-top: 15px;
+		border: 1px solid #dad7d7;
+		box-shadow: 0px 0px 3px #f0f0f0 inset;
+	}
+	p{
+		text-align: left;
+		margin-top: 30px;
+		float: left;
+		font-size: 13px;
+		font-family: Roboto-Regular;
+	}
+	p.ico{
+		margin-top: 14px;
+		&:before{
+			content:'';
+			width: 11px;
+			height: 11px;
+			display: inline-block;
+			margin-right: 5px;
+			background-image: url('..//img/p_ico.png');
+		};
+	}
+}
+
+.How_this_works,.WhatisRaven{
+	position: absolute;
+	/*left: 24%;
+	top: 35px;*/
+	top: -1px;
+	left: 104%;
+	background-color: transparent;
+	border: 1.1px solid #e6e8e9;
+	border-radius: 3px;
+	height: 270px;
+	width: 48%;
+	max-width: 420px;
+	padding: 20px;
+	display: inline-block;
+	float: left;
+	h4{
+		text-align: left;
+		color: #696b6c;
+		font-family: Roboto-Regular;
+	}
+	p{
+		color: #8f8e8e;
+		font-size: 13px;
+		font-family: Roboto-Regular;
+	}
+	a.share_facebook, a.share_twitter{
+		padding: 15px 20px;
+		display: block;
+		background-color: #3b5998;
+		border-radius: 30px;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		bottom: -60px;
+		left: 0;
+		text-decoration: none;
+		i{
+			font-size: 16px;
+			margin-right: 20px;
+		}
+	}
+	a.share_twitter{
+		bottom: -120px;
+		background-color: #00acee;
+	}
+}
+.tableDiv{
+	position: relative;
+	left: 22%;
+	background-color: #fff;
+	width: 50.001%;
+	margin-top: 35px;
+	float: left;
+	height: 100px;
+	max-width: 800px;
+	border-bottom:  1px solid #d7dadd;
+	border-right:  1px solid #d7dadd;
+	border-radius: 3px;
+	margin-right: 100%;
+	.table, table.table_credits{
+		tr{
+	
+			th{
+				text-align: center;
+				color: #9f9fa0;
+				font-size: 14px;
+				font-family: Roboto-Regular;
+				background-color: #fafbfc;
+				&:first-child{
+					text-align: left;
+					padding-left: 30px;
+				};
+			}
+		}
+		tr.null{
+			td{
+				line-height: 40px;
+				padding-left: 30px;
+				color: #020202;
+				font-family: Roboto-Regular;
+				font-size: 13px;
+			}
+		}
+	}
+	table.table_credits{
+		text-align: center;
+		thead{
+			tr{
+				border-bottom: 1px solid #e7e7e7;
+				th{
+					width: 150px;
+					height: 35px;
+					font-size: 12px;
+					font-family: Roboto-Regular;
+				}
+			}
+		}
+		tr.null{
+			td{
+				text-align: left;
+				padding-top: 10px;
+				line-height: 20px;
+				padding-left: 30px;
+				color: #020202;
+				font-family: Roboto-Regular;
+				font-size: 13px;
+			}
+		}
+
+	}
+}
+
+.total_credits{
+	padding: 0;
+	padding-bottom: 22px;
+	.total_credits_header{
+		position: relative;
+		width: 100%;
+		/*height: 150px;*/
+		background-color: #0d82d5;
+		text-align: center;
+		line-height: 50px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		span{
+			font-size: 62px;
+			color: #fff;
+			font-family: Roboto-Condensed;
+		}
+		p{
+			float: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			color: #0e3b60;
+		}
+	}
+	.total_credits_body{
+		padding-left: 15px;
+		padding-right: 15px;
+		p{
+			float: none;
+		}
+		input{
+			float: left;
+			margin: 0;
+			font-family: Roboto-Light;
+		}
+		button{
+			padding: 13px 70px;
+			background-color: #0d82d5;
+			border: none;
+			border-radius: 30px;
+			display: block;
+			right: 15px;
+			position: absolute;
+			color: #fff;
+			font-family: Roboto-Medium;
+			&:hover{
+				background-color:#4fa9e9;
+			};
+		}
+	}
+}
+
+.WhatisRaven{
+	background-color: #fff;
+	h4{
+		text-align: center;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	p{
+		margin-top: 0;
+	}
+}
+
+.AddCard{
+	.AddNewCard{
+		border: 1px solid #e2e0e0;
+		border-radius: 5px;
+		width: 30%;
+		height: 30%;
+		margin-top: 40px;
+		padding: 30px;
+		span.plas{
+			font-size: 30px;
+			font-family: Roboto-Regular;
+		}
+		button{
+			background-color: transparent;
+			border: none; 
+			text-decoration:underline;
+			&:hover{
+				text-decoration: none;
+			};
+		}
+	}
+	p{
+		padding: 15px 17px;
+		display: block;
+		background-color: #fafdfa;
+		width: 100%;
+		color: #49a443;
+		border: 1px solid #b6dfb3;
+		font-size: 12px;
+		font-family: Roboto-Regular;
+	}
+}
+
+
+
+
+/*============    	МОДАЛЬНЫЕ ОКНА    ===========*/
+
+#adds{
+	.modal-header, .step_2_header{
+		background-color: #fafafa;
+		border-bottom: none;
+		h1{
+			font-size: 20px;
+			color: #26282d;
+		}
+		button.close{
+			position: absolute;
+			top: -30px;
+			right: 0;
+			color: #fff;
+			font-size: 30px;
+			outline:none;
+		}
+	}
+	.modal-body{
+		padding-left: 80px;
+		padding-right: 80px;
+		background-color: #fafafa;
+		p{
+			color: #565555;
+		}
+		span{
+			color: #186fce;
+		}
+		select{
+			width: 100%;
+			height: 47px;
+			margin-top: 15px;
+			border-radius: 7px;
+			outline:none;
+			background-color: #f1f5f8;
+			padding-left: 20px;
+			padding-right: 30px;
+			&:hover{
+				background-color:#fff;
+				box-shadow: 0px 0px 13px #d0dcee inset;
+			};
+			&:last-child{
+				margin-bottom: 30px;
+			};
+		}
+	}
+	.modal-footer{
+
+		text-align: center;
+		background-color: #f1f5f8;
+		border-top: 1px solid #d2d0d0;
+		button{
+			padding: 13px 27px;
+			text-transform: uppercase;	
+			border-radius: 30px;
+			outline:none;
+		}
+		.btnAdd{
+			background-color: #0d82d5;
+			border: 1px solid #0d82d5;
+			color: #fff;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			&:hover{
+				background-color: #3ba7f4;
+				border: 1px solid #3ba7f4;
+			};
+		}
+		.btnCloce{
+			background-color: transparent;
+			border: 1px solid #e2dfdf;
+			padding: 13px 15px;
+			color: #565555;
+			&:hover{
+				border: 1px solid #6d6d6d;
+			};
+		}
+	}
+}
+
+
+#mileage{
+	margin-top: 20px;
+	margin-left: -1px;
+	width: 100%;
+	.modal-header{
+		/*background-color: #153053;*/
+		height: 69px;
+		border: none;
+		button.close{
+			right: 0;
+			top: -20px;
+			color: #fff;
+			position: absolute;
+		}
+	}
+
+	.modal-body{
+		text-align: center;
+		padding-left: 60px;
+		padding-right: 60px;
+		input{
+			width: 80%;
+			height: 45px;
+			margin-top: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border: none;
+			border-radius: 3px;
+			box-shadow: 0px 0px 7px #e0e0e0 inset;
+		}
+	}
+	
+
+
+	.step_3_footer{
+		text-align: center;
+		background-color: #f1f5f8;
+		margin-top: 20px;
+		button{
+			text-transform: uppercase;
+		}
+			button.CONTINUE{
+				background: #0d82d5;
+				color: #fff;
+				padding: 15px 20px;
+				border-radius: 5px;
+				border: none;
+				margin-right: 10px;
+				&:hover{
+					background-color: #2e9fef;
+				};
+			}
+			button.SKIP{
+				background: transparent;
+				color: #565555;
+				padding: 14px 18px;
+				border-radius: 5px;
+				border: 1px solid #e2dfdf;
+				margin-left: 10px;
+				&:hover{
+					border: 1px solid #7b7b7b;
+					color: #7b7b7b;
+				};
+			}
+	}
+}
+
+
+
+#Preview_e-mail{
+	margin-top: 20px;
+	.modal-header{
+		text-align: center;
+		border: none;
+		h2{
+			font-family: Roboto-Medium;
+			font-size: 26px;
+		}
+		button.close{
+			top: -45px;
+			right: 0;
+			position: absolute;
+			opacity: 1;
+			color: #afb2b5;
+			text-shadow: none;
+		}
+	}
+	.modal-body{
+		padding-left: 120px;
+		padding-right: 120px;
+		text-align: center;
+		margin-bottom: 20px;
+		p{
+			color: #8d8c8c;
+			text-align: left;
+			font-family: Roboto-Regular;
+			font-size: 11px;
+		}
+		input, textarea{
+			width: 100%;
+			border: 1px solid #c1c2c2;
+			border-radius: 3px;
+			box-shadow: 0px 0px 3px #c1c2c2 inset;
+			margin-bottom: 10px;
+		}
+		input{
+			padding-left: 30px;
+			padding-right: 30px;
+			height: 40px;
+			color: #4b4949;
+			font-family: Roboto-Regular;
+		}
+		textarea{
+			padding-top: 25px;
+			padding-left: 30px;
+			padding-right: 30px;
+			background-color: #f5f6f7;
+			color: #4a4b4b;
+			font-family: Roboto-Light;
+			height: 200px;
+		}
+	}
+	.modal-footer{
+		background-color: #f1f5f8;
+		border-top: 1.1px solid #d2d0d0;
+		text-align: center;
+	}
+	button{
+		background-color: transparent;
+		font-family: Roboto-Medium;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	button.save{
+		padding: 10px 20px;
+		border: 1px solid #0d82d5;
+		color: #0d82d5;
+		border-radius: 30px;
+		margin-right: 10px;
+	}
+	button.cancel{
+		color: #7f8080;
+		padding: 10px 20px;
+		border: 1px solid #e3e0e0;
+		border-radius: 30px;
+		margin-left: 10px;
+		&:hover{
+			border: 1px solid #999696;
+		};
+	}
+
+}
+
+#Modal_add_card{
+	margin-top: 20px;
+	.modal-header{
+		border: none;
+		background-color: #fafafa;
+		h2{
+			text-align: center;
+			font-family: Roboto-Medium;
+		}
+		button.close{
+			position: absolute;
+			right: -20px;
+			top: -35px;
+			opacity: 1;
+			color: #fff;
+			box-shadow: none;
+			text-shadow: none;
+		}
+	}
+	.modal-body{
+		background-color: #fafafa;
+		padding-bottom: 50px;
+		padding-left: 60px;
+		padding-right: 60px;
+		img{
+			text-align: left;
+			opacity: .6;
+			margin-top: 10px;
+		}
+		input{
+			width: 100%;
+			height: 40px;
+			margin-top: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 4px;
+			border: 1px solid #c1c2c2;
+			font-family: Roboto-Light;
+			box-shadow: 0px 0px 15px #f7f7f7 inset;
+		}
+		input.date{
+			width: 30%;
+			padding-left: 20px;
+		}
+		input.cvc{
+			width: 38.3%;
+		}
+	}
+	.modal-footer{
+		background-color: #f1f5f8;
+		text-align: center;
+	}
+	button{
+		padding: 13px 20px;
+		border-radius: 30px;
+		border: none;
+		font-family: Roboto-Medium;
+	}
+	button.save{
+		background-color: #0d82d5;
+		color: #fff;
+		&:hover{
+			background-color: #36a6f6;
+		};
+		&:focus{
+			background-color: #36a6f6;
+			outline: none;
+		};
+	}
+	button.cancel{
+		color: #565555;
+		background-color: transparent;
+		border: 1px solid #e2dfdf;
+		&:hover{
+			border: 1px solid #565555;
+		};
+	}
+}
+
+/*============    	АДАПТИВ    ===========*/
+
+.dropdown-toggle{
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	i{
+		font-size: 40px;
+	}
+}
+
+.MenuUser{
+	right: 0;
+	position: absolute;
+	top: 0;
+	.dropdown-menu{
+		margin-left: -150px;
+	}
+}
+
+@media(min-width:0px) and (max-width:320px) {
+	header{
+		display: none;
+	}
+
+	.total_credits{
+		left: 0;
+		width: 100%;
+		min-height: 360px;
+		.WhatisRaven{
+			display: none;
+		}
+		.total_credits_body{
+			input{
+				width: 100%;
+				float: none;
+			}
+			button.REDEEM{
+				display: block;
+				width: 80%;
+				position: absolute;
+				left: 0;
+				margin-top: 15px;
+				margin: 15px auto;
+			}
+		} 
+	}
+
+	.tableDiv table.table_credits tr.null td{
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.refer{
+		left: 0;
+		width: 100%;
+		h5{
+			margin: 0;
+			margin-top: 15px;
+			width: 100%;
+		}
+		button.copy{
+			right: 20px;
+			top: 7px;
+		}
+		button.prew{
+			float: left;
+		}
+		input{
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.How_this_works{
+			display: none;
+			position: relative;
+		}
+	}
+
+	.tableDiv{
+			left: 0;
+			width: 100%;
+			margin-bottom: 30px;
+			.table{
+				tr.null td, .tableDiv table.table_credits tr.null td{
+					line-height: 16px;
+				}
+			}
+	}
+
+	#Preview_e-mail{
+		padding: 5px;
+		.modal-header{
+			button.close{
+				top: -40px;
+			}
+		} 
+		.modal-body{
+			padding: 5px;
+			p{
+				padding: 0;
+				margin: 0;
+				text-align: center;
+			}
+			input, textarea{
+				width: 80%;
+			}
+		}
+	}
+
+
+	aside{
+		display: none;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook ,.ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			display: none;
+		}
+	}
+
+	.bottom_line_settings{
+		text-align: center;
+		padding-left: 0;
+		h1{
+			font-size: 14px;
+		}
+		ul{
+			li{
+				a{
+					font-size: 12px;
+					border: none;
+					padding: 0;
+					&:hover{
+						border: none;
+					};
+				}
+			}
+			li.active{
+				border: none;
+			}
+		}
+		h1.H1Cars{
+			font-size: 16px;
+			margin-top: 0px;
+		}
+
+		button.H1Cars{
+			margin: 40px auto;
+			left: 0px;
+			right: 0;
+			display: block;
+			width: 50%;
+			padding: 10px;
+		}
+	}
+	.addCarBody{
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 40px;
+		p.recommendedservice{
+			width: 100%;
+			font-size: 12px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		button.CarAdvice{
+			padding: 13px 20px;
+			
+			font-size: 13px;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+
+	}
+
+	.AddCard{
+		left: 0;
+		width: 100%;
+	}
+
+	.AddCard .AddNewCard {
+	    border: 1px solid #e2e0e0;
+	    border-radius: 5px;
+	    width: 75%;
+	    height: 30%;
+	    margin-top: 40px;
+	    padding: 30px;
+	    margin: 30px auto;
+	}
+
+	.AddCard p {
+	    padding: 15px 17px;
+	    display: block;
+	    background-color: #fafdfa;
+	    width: 100%;
+	    color: #49a443;
+	    border: 1px solid #b6dfb3;
+	    font-size: 12px;
+	    font-family: Roboto-Regular;
+	}
+	.CarIsAdd{
+		left: 0;
+		width: 100%;
+		padding: 0;
+		padding-top: 30px;
+		.view{
+			width: 100%;
+			button.btn{
+				padding: 5px;
+
+				margin-top: 60px;
+			}
+		}
+		.infoCar{
+			border: none;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			p.yearCar{
+				text-align: center;
+			}
+			h2.marcCar, h2.trimCar{
+				font-size: 19px;
+				text-align: center;
+			}
+			table{
+				margin-left: 20px;
+				tr{
+					td{
+						width: 200px;
+					}
+				}
+			}
+		}
+		img{
+			display: none;
+		}
+		.BigCircle{
+			display: none;
+		}
+	}
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	.CarIsAdd{
+			left: 0;
+			width: 100%;
+			padding: 0;
+			padding-top: 30px;
+			.view{
+				width: 100%;
+				button.btn{
+					padding: 5px;
+
+					margin-top: 60px;
+				}
+			}
+			.infoCar{
+				border: none;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				p.yearCar{
+					text-align: center;
+				}
+				h2.marcCar, h2.trimCar{
+					font-size: 19px;
+					text-align: center;
+				}
+				table{
+					margin-left: 20px;
+					tr{
+						td{
+							width: 200px;
+						}
+					}
+				}
+			}
+			img{
+				display: none;
+			}
+			.BigCircle{
+				display: none;
+			}
+	}
+	.total_credits{
+		left: 0;
+		width: 100%;
+		min-height: 360px;
+		.WhatisRaven{
+			display: none;
+		}
+		.total_credits_body{
+			input{
+				width: 100%;
+				float: none;
+			}
+			button.REDEEM{
+				display: block;
+				width: 80%;
+				position: absolute;
+				left: 0;
+				margin-top: 15px;
+				margin: 15px auto;
+			}
+		} 
+	}
+
+	.tableDiv table.table_credits tr.null td{
+		font-size: 12px;
+		line-height: 16px;
+	}
+	
+
+	.refer{
+		left: 0;
+		width: 100%;
+		h5{
+			margin: 0;
+			margin-top: 15px;
+		}
+		button.copy{
+			right: 20px;
+			top: 7px;
+		}
+		button.prew{
+			float: left;
+		}
+		input{
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.How_this_works{
+			display: none;
+			position: relative;
+		}
+	}
+
+	.tableDiv{
+			left: 0;
+			width: 100%;
+			margin-bottom: 30px;
+			.table{
+				tr.null td, .tableDiv table.table_credits tr.null td{
+					line-height: 16px;
+				}
+			}
+	}
+
+	#Preview_e-mail{
+		padding: 5px;
+		.modal-header{
+			button.close{
+				top: -40px;
+			}
+		} 
+		.modal-body{
+			padding: 5px;
+			p{
+				padding: 0;
+				margin: 0;
+				text-align: center;
+			}
+			input, textarea{
+				width: 80%;
+			}
+		}
+	}
+
+	
+
+	aside,header{
+		display: none;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices{
+		left: 0;
+		width: 100%;
+	}
+
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook ,.ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			display: none;
+		}
+	}
+
+	.bottom_line_settings{
+		text-align: center;
+		padding-left: 0;
+		h1{
+			font-size: 14px;
+		}
+		ul{
+			li{
+				a{
+					font-size: 12px;
+					border: none;
+					padding: 0;
+					&:hover{
+						border: none;
+					};
+				}
+			}
+			li.active{
+				border: none;
+			}
+		}
+		h1.H1Cars{
+			font-size: 16px;
+			top: 0;
+			margin-top: 0;
+			display: block;
+		}
+		button.addCars{
+			margin: 40px auto;
+			left: 0px;
+			right: 0;
+			display: block;
+			width: 55%;
+			padding: 10px;
+		}
+	}
+	
+	.addCarBody{
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 40px;
+		p.recommendedservice{
+			width: 100%;
+			font-size: 12px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		button.CarAdvice{
+			
+			font-size: 13px;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.AddCard{
+		left: 0;
+		width: 100%;
+	}
+
+	.AddCard .AddNewCard {
+	    border: 1px solid #e2e0e0;
+	    border-radius: 5px;
+	    width: 75%;
+	    height: 30%;
+	    margin-top: 40px;
+	    padding: 30px;
+	    margin: 30px auto;
+	}
+
+	.AddCard p {
+	    padding: 15px 17px;
+	    display: block;
+	    background-color: #fafdfa;
+	    width: 100%;
+	    color: #49a443;
+	    border: 1px solid #b6dfb3;
+	    font-size: 12px;
+	    font-family: Roboto-Regular;
+	}
+
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	.CarIsAdd{
+		left: 0;
+		width: 100%;
+		padding: 0;
+		padding-top: 30px;
+		.view{
+			width: 100%;
+			button.btn{
+				padding: 5px;
+
+				margin-top: 60px;
+			}
+		}
+		.infoCar{
+			border: none;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			p.yearCar{
+				text-align: center;
+			}
+			h2.marcCar, h2.trimCar{
+				font-size: 19px;
+				text-align: center;
+			}
+			table{
+				margin-left: 20px;
+				tr{
+					td{
+						width: 200px;
+					}
+				}
+			}
+		}
+		img{
+			display: none;
+		}
+		.BigCircle{
+			display: none;
+		}
+	}
+
+	.AddCard{
+		left: 0;
+		width: 100%;
+	}
+	.total_credits{
+		left: 0;
+		width: 60%;
+		min-height: 360px;
+		.WhatisRaven{
+			width: 60%;
+			height: 100%;
+			p{
+				font-size: 12px;
+				line-height: 15px;
+			}
+		}
+		.total_credits_body{
+			input{
+				width: 100%;
+				float: none;
+			}
+			button.REDEEM{
+				display: block;
+				width: 80%;
+				position: absolute;
+				left: 0;
+				margin-top: 15px;
+				margin: 15px auto;
+			}
+		} 
+	}
+
+	.tableDiv table.table_credits tr.null td{
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.refer{
+		left: 0;
+		width: 60%;
+		h5{
+			margin: 0;
+			margin-top: 15px;
+		}
+		button.copy{
+			right: 20px;
+			top: 7px;
+		}
+		button.prew{
+			float: left;
+		}
+		input{
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.How_this_works{
+			width: 60%;
+			height: 100%;
+			a{
+				padding: 7px 5px;
+				font-size: 12px;
+			}
+			a.share_facebook{
+				bottom: 50px;
+			}
+			a.share_twitter{
+				bottom: 10px;
+			}
+			p{
+				font-size: 11px;
+			}
+		}
+	}
+
+	.tableDiv{
+			left: 0;
+			width: 100%;
+			margin-bottom: 30px;
+			.table{
+				tr.null td, .tableDiv table.table_credits tr.null td{
+					line-height: 16px;
+				}
+			}
+	}
+
+	#Preview_e-mail{
+		padding: 5px;
+		.modal-header{
+			button.close{
+				top: -40px;
+			}
+		} 
+		.modal-body{
+			padding: 5px;
+			p{
+				padding: 0;
+				margin: 0;
+				text-align: center;
+			}
+			input, textarea{
+				width: 80%;
+			}
+		}
+	}
+	
+	aside, header{
+		display: none;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices{
+		left: 0;
+		width: 100%;
+	}
+
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook, .ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					width: 110px;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+	}
+	
+	.addCarBody{
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 40px;
+		p.recommendedservice{
+			width: 100%;
+			font-size: 12px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		button.CarAdvice{
+			
+			font-size: 13px;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+@media(min-width:768px) and (max-width:768px){
+	.AddCard{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		display: block;
+		.top_line{
+			ul{
+				li{
+					width: 150px;
+					a{
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width:769px) and (max-width:992px) {
+
+	.CarIsAdd{
+		left: 0;
+		width: 100%;
+		padding: 0;
+		padding-top: 30px;
+		.view{
+			button.btn{
+				padding: 5px;
+
+				margin-top: 10px;
+			}
+		}
+		.infoCar{
+			border: none;
+			margin-left: 50px;
+			width: 38%;
+		}
+		
+		.BigCircle{
+			display: none;
+		}
+	}
+	aside{
+		display: none;
+	}
+	.AddCard{
+		left: 0;
+		width: 100%;
+	}
+
+	.total_credits{
+		left: 0;
+		width: 60%;
+		min-height: 360px;
+		.WhatisRaven{
+			width: 60%;
+			height: 100%;
+			p{
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+		.total_credits_body{
+			input{
+				width: 100%;
+				float: none;
+			}
+			button.REDEEM{
+				display: block;
+				width: 80%;
+				position: absolute;
+				left: 0;
+				margin-top: 15px;
+				margin: 15px auto;
+			}
+		} 
+	}
+
+	.tableDiv table.table_credits tr.null td{
+		font-size: 12px;
+		line-height: 16px;
+	}
+	
+	.refer{
+		left: 0;
+		width: 60%;
+		h5{
+			margin: 0;
+			margin-top: 15px;
+		}
+		button.copy{
+			right: 20px;
+			top: 7px;
+		}
+		button.prew{
+			float: left;
+		}
+		input{
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.How_this_works{
+			width: 60%;
+			height: 100%;
+			a{
+				padding: 7px 10px;
+				font-size: 12px;
+			}
+			a.share_facebook{
+				bottom: 50px;
+			}
+			a.share_twitter{
+				bottom: 10px;
+			}
+			p{
+				font-size: 11px;
+			}
+		}
+	}
+
+	.tableDiv{
+			left: 0;
+			width: 100%;
+			margin-bottom: 30px;
+			.table{
+				tr.null td, .tableDiv table.table_credits tr.null td{
+					line-height: 16px;
+				}
+			}
+	}
+
+	#Preview_e-mail{
+		padding: 5px;
+		.modal-header{
+			button.close{
+				top: -40px;
+			}
+		} 
+		.modal-body{
+			padding: 5px;
+			p{
+				padding: 0;
+				margin: 0;
+				text-align: center;
+			}
+			input, textarea{
+				width: 80%;
+			}
+		}
+	}
+	
+
+	.addCarBody{
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		p.recommendedservice{
+			width: 100%;
+			font-size: 12px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		button.CarAdvice{
+			
+			font-size: 13px;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices{
+		left: 0;
+		width: 100%;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook, .ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					width: 160px;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.mail_preferences{
+		left: 0;
+		width: 100%;
+		margin-left: 0;
+		.centerDIv{
+			margin: 0 auto;
+		}
+		.centerDIvFooter{
+			bottom: -20px;
+			.centerDIv{
+				padding-top: 20px;
+			}
+		}
+	}
+
+	.addCarBody{
+		margin-bottom: 40px;
+	}
+}
+
+
+@media(min-width:993px) and (max-width:1220px) {
+	br{
+		display: none;
+	}
+	.CarIsAdd{
+
+		table{
+			td{
+				width: 183px;
+			}
+		}
+		.view{
+			button.btn{
+				padding: 10px;
+			}
+		}
+		.BigCircle{
+			right: 55px;
+		}
+	} 
+	.total_credits{
+		input{
+			width: 55%;
+		}
+		.WhatisRaven{
+			p{
+				font-size: 12px;
+				line-height: 15px;
+			}
+		}
+	}
+
+	
+
+	.refer{
+		h5{
+			margin: 35px 0 30px 0px;
+		}
+		input{
+			padding-right: 80px;
+		}
+	} 
+
+	.addCarBody{
+		margin-bottom: 40px;
+	}
+	aside{
+		br{
+			display: block;
+		}
+		a.btn{
+			padding: 10px 25px;
+			margin-left: 0;
+		}
+	}
+	.Cars{
+		.profil{
+			br{
+				display: block;
+			}
+			height: 230px;
+		}
+	}
+		
+	.bottom_line{
+			overflow: hidden;
+			width: 80%;
+			/*margin-top: 50px;*/
+			.user{
+				margin-left: 0;
+				h1{
+					font-size: 14px;
+				}
+			}
+			.give{
+				display: none;
+			}
+			.recommended_servises{
+				margin-left: 0;
+				border: none;
+				right: 0;
+			}
+	}
+	
+}
+
+@media(min-width:1221px) and (max-width:1529px){
+	aside{
+		a.btn{
+			padding: 10px 20px;
+		}
+	}
+
+	.refer{
+		h5{
+			margin: 35px 0 30px 0px;
+		}
+		input{
+			padding-right: 80px;
+		}
+	} 
+
+
+
+	.addCarBody{
+		margin-bottom: 40px;
+	}
+	
+	.CarsADD{
+		.profil{
+			height: 230px;
+			br{
+				display: block;
+			}
+		}
+	}
+}
+
+
+
